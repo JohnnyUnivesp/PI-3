@@ -165,7 +165,7 @@
 
                                 <div class="form-group">
                                     <label for="codigoRastreio">Código de Rastreio:</label>
-                                    <input type="text" id="codigoRastreio" value=${venda.codigoRastreio} name="codigoRastreio" class="form-control" ${venda.status != 'Enviado' ? 'disabled' : ''}>
+                                    <input type="text" id="codigoRastreio" value="${venda.codigoRastreio}" name="codigoRastreio" class="form-control" ${venda.status != 'Enviado' ? 'disabled' : ''}>
                                 </div>
 
                                 <button type="submit" class="btn btn-success">Salvar</button>

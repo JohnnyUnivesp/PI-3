@@ -73,6 +73,9 @@
                         <a class="nav-link js-scroll-trigger" href="<c:url value='vendas'/>">Vendas</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="<c:url value='relatorio'/>">Relatório de Vendas</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="<c:url value='usuarios'/>">Usuários</a>
                     </li>
                     <li class="nav-item">

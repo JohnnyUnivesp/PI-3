@@ -1,5 +1,6 @@
 package br.com.sparkcommerce.dao;
 
+import java.time.LocalDateTime;
 import java.util.List;
 
 import javax.enterprise.context.RequestScoped;
@@ -120,5 +121,12 @@ import br.com.sparkcommerce.model.Venda;
 	    public int totalVendas() {
 	        String jpql = "SELECT COUNT(v) FROM Venda v";
 	        return ((Long) em.createQuery(jpql).getSingleResult()).intValue();
+	    }
+	    
+	    public List<Venda> buscarPorData(LocalDateTime inicio, LocalDateTime fim) {
+	        return em.createQuery("SELECT v FROM Venda v WHERE v.dataPagamento BETWEEN :inicio AND :fim", Venda.class)
+	                 .setParameter("inicio", inicio)
+	                 .setParameter("fim", fim)
+	                 .getResultList();
 	    }
 }

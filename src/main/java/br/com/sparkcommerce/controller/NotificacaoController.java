@@ -117,6 +117,7 @@ public class NotificacaoController {
 	                ItemVenda itemVenda = new ItemVenda();
 	                itemVenda.setProdutoId(Long.valueOf(produto.getId()));
 	                itemVenda.setQuantidade(quantidade);
+	                itemVenda.setValorUnitario(produto.getValor());
 	                itensVenda.add(itemVenda);
 	            }
 	

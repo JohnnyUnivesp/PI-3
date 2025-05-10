@@ -37,6 +37,16 @@ public class Produto extends Model {
 	
 	@OneToOne(cascade = {CascadeType.PERSIST,CascadeType.MERGE},fetch = FetchType.EAGER)
 	private Imagem imagem;
+	
+    private int estoqueminimo;
+
+	public int getEstoqueminimo() {
+		return estoqueminimo;
+	}
+
+	public void setEstoqueminimo(int estoqueMinimo) {
+		this.estoqueminimo = estoqueMinimo;
+	}
 
 	public String getNome() {
 		return nome;
@@ -90,5 +100,5 @@ public class Produto extends Model {
 	public void setQuantidadeEstoque(Integer quantidadeEstoque) {
 		this.quantidadeEstoque = quantidadeEstoque;
 	}
-	
+
 }

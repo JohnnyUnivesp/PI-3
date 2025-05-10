@@ -81,6 +81,9 @@
                     <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="<c:url value='categorias'/>">Categorias</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="<c:url value='estoque'/>">Estoque</a>
+                    </li>
                 </c:if>
                 <li class="nav-item">
                     <a class="nav-link js-scroll-trigger" href="<c:url value='produtos'/>">Produtos</a>

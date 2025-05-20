@@ -16,7 +16,6 @@
     <header class="masthead">
     <!-- Navigation -->
     <tag:menu-superior></tag:menu-superior>
-
     </header>
     <div class="container mt-4" style="justify-content">
         <section class="page-section" id="editarBanners">
